@@ -13,11 +13,11 @@ public class ValoCBApplication {
         System.out.println("Hello Server!");
 
         // Reading Prices.csv
-        CSVReader pricesReader = CSVHelper.readCSVFile("C:\\Users\\Kawta\\IdeaProjects\\valoCb\\src\\main\\resources\\Prices.csv", 4);
+        CSVReader pricesReader = CSVHelper.readCSVFile(System.getProperty("user.dir") +"\\src\\main\\resources\\Prices.csv", 4);
         List<PriceInput> priceInputs = CSVHelper.fromCSVToPricePOJO(pricesReader);
 
         // Reading Product.csv
-        CSVReader productsReader = CSVHelper.readCSVFile("C:\\Users\\Kawta\\IdeaProjects\\valoCb\\src\\main\\resources\\Product.csv", 5);
+        CSVReader productsReader = CSVHelper.readCSVFile(System.getProperty("user.dir") +"\\src\\main\\resources\\Product.csv", 5);
         List<ProductInput> productInputs = CSVHelper.fromCSVToProductPOJO(productsReader);
 
 

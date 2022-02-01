@@ -11,7 +11,7 @@ import java.util.MissingFormatWidthException;
 
 public class Forex {
 
-    static String forexFile = "C:\\Users\\Kawta\\IdeaProjects\\valoCb\\src\\main\\resources\\Forex.csv";
+    static String forexFile = System.getProperty("user.dir") +"\\src\\main\\resources\\Forex.csv";
     static List<String[]> forexMatrix;
 
     static {
